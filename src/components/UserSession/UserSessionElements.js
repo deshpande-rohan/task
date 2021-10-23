@@ -6,7 +6,7 @@ export const SessionWrapper = styled.div`
   border-radius: 8px;
   padding: 14px 20px;
   height: 75%;
-  max-height: 80%;
+  max-height: 85%;
 
   @media only screen and (max-width: 1024px) {
     padding: 12px 20px;
@@ -15,6 +15,7 @@ export const SessionWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 8px 20px;
     margin-bottom: 20px;
+    height: 100%;
   }
 
   @media only screen and (max-width: 480px) {

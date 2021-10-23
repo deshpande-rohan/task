@@ -46,10 +46,10 @@ export const Actions = styled.div`
   }
 
   @media only screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 17px;
     gap: 10px;
-    top: 8px;
-    right: 10px;
+    top: 7px;
+    right: 15px;
   }
 `;
 
@@ -100,6 +100,10 @@ export const Text = styled.p`
       transform: translateY(2px);
     }
   }
+
+  @media only screen and(max-width: 420px) {
+    font-size: 15px;
+  }
 `;
 
 export const SecondaryInfo = styled.div`
@@ -142,6 +146,10 @@ export const Languages = styled.div`
   @media only screen and (max-width: 768px) {
     gap: 8px;
   }
+
+  @media only screen and (max-width: 480px) {
+    gap: 2px;
+  }
 `;
 
 export const Description = styled.div`
@@ -155,6 +163,13 @@ export const Description = styled.div`
   @media only screen and (max-width: 480px) {
     & p {
       font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    & p {
+      padding: 0 10px;
+      font-size: 16px;
     }
   }
 `;

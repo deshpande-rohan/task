@@ -25,7 +25,11 @@ export const QuestionWrapper = styled.div`
   }
 
   @media only screen and (max-width: 480px) {
-    padding: 0 15px;
+    padding: 0 10px;
+  }
+
+  @media only screen and (max-width: 420px) {
+    padding: 0 8px;
   }
 `;
 
@@ -58,6 +62,10 @@ export const Ques = styled.h3`
   @media only screen and (max-width: 768px) {
     font-size: 18px;
   }
+
+  @media only screen and (max-width: 420px) {
+    font-size: 16px;
+  }
 `;
 
 export const Desc = styled.p`
@@ -73,6 +81,10 @@ export const Desc = styled.p`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+  }
+
+  @media only screen and (max-width: 420px) {
+    font-size: 15px;
   }
 `;
 
