@@ -1,38 +1,209 @@
-.App {
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-black-85: #0c0c0c;
+  --color-black-75: #737373;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+th,
+td {
+  border-top: 1px solid #d1cfcf;
+  border-bottom: 1px solid #d1cfcf;
   text-align: center;
+  padding: 12px 40px;
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th {
+  font-size: 22px;
+  color: #1010109f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+td {
+  font-size: 20px;
+  color: #101010c9;
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: 1px solid #d1cfcf;
+}
+
+th svg {
+  width: 25px;
+  height: 25px;
+  transform: translate(-2px, 5px);
+  fill: #1010109f;
+}
+
+td span {
+  border-bottom: 2px solid #1010105e;
+}
+
+td a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #101010;
+  transition: color 0.3s ease;
+}
+
+td a:hover {
+  color: #6dd36d;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(214, 214, 214, 0.308);
+}
+
+@media only screen and (max-width: 768px) {
+  th,
+  td {
+    padding: 8px 20px;
+  }
+
+  th {
+    white-space: nowrap;
+    font-size: 20px;
+  }
+  td {
+    font-size: 16px;
+  }
+  th svg {
+    width: 20px;
+    height: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 480px) {
+  th,
+  td {
+    padding: 4px 16px;
   }
-  to {
-    transform: rotate(360deg);
+  th {
+    font-size: 18px;
+  }
+  td {
+    font-size: 14px;
+  }
+  table {
+    width: 80%;
+  }
+}
+
+.calendar {
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* TO STYLE THE MONTH,YEAR AND NAVIGATION SECTION */
+
+.react-calendar__navigation {
+  position: relative;
+  display: block !important;
+  margin-bottom: 0;
+}
+
+.react-calendar__navigation__arrow {
+  position: absolute;
+  font-size: 20px;
+}
+
+.react-calendar__navigation__prev-button {
+  top: -10px;
+  right: 48px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.react-calendar__navigation__next-button {
+  top: -10px;
+  right: 15px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.react-calendar__navigation__label {
+  font-size: 22px;
+  font-weight: 700;
+  align-self: flex-start;
+  color: #3a3a3a;
+}
+
+@media only screen and (max-width: 1024px) {
+  .react-calendar__navigation__prev-button,
+  .react-calendar__navigation__next-button {
+    font-size: 30px;
+    top: -6px;
+  }
+  .react-calendar__navigation__label {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .react-calendar__navigation__prev-button,
+  .react-calendar__navigation__next-button {
+    font-size: 26px;
+    top: -6px;
+  }
+  .react-calendar__navigation__label {
+    font-size: 18px;
+  }
+}
+
+/* TO STYLE THE CALENDAR DAYS AND WEEK SECTION */
+
+.react-calendar__month-view__weekdays__weekday abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
+.react-calendar__month-view__days__day {
+  color: #101010 !important;
+}
+
+.react-calendar__tile {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  color: #9f9f9f !important;
+}
+
+.react-calendar__tile--active,
+.react-calendar__tile--now,
+.react-calendar__tile--hasActive {
+  background: #9281fc !important;
+  color: #fff !important;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .react-calendar__tile {
+    font-size: 12.8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .react-calendar__tile {
+    font-size: 14px;
   }
 }
