@@ -26,8 +26,10 @@ const UserProfile = ({ image, skills, companies }) => {
       easing: "ease",
       delay: 800,
       once: true,
+      disable: "mobile",
     });
   }, []);
+
   return (
     <ProfileContainer data-aos="fade-right">
       <UserAvatar>

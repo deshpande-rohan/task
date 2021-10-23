@@ -5,19 +5,18 @@ export const TableWrapper = styled.div`
   justify-content: center;
   width: 100%;
   min-height: 60vh;
+
+  @media only screen and (max-width: 480px) {
+    width: 90%;
+  }
 `;
 
 export const TableContainer = styled.div`
-  widht: 100%;
-  height: 100%;
+  display: block;
   padding: 50px 0;
 
   & table {
     width: 100%;
     height: 100%;
-  }
-
-  @media only screen and (max-width: 480px) {
-    padding: 50px 20px;
   }
 `;

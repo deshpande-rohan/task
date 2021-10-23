@@ -26,11 +26,7 @@ const Dashboard = ({ user }) => {
           description={user.description}
           id="bio"
         />
-        <UserSession
-          createdAt={user.createdAt}
-          updatedAt={user.updatedAt}
-          id="session"
-        />
+        <UserSession id="session" />
       </DashboardContainer>
     </DashboardWrapper>
   );

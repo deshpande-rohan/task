@@ -24,10 +24,6 @@ export const PrimaryInfo = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-
-  @media only screen and (max-width: 768px) {
-    position: static;
-  }
 `;
 
 export const Actions = styled.div`
@@ -47,6 +43,13 @@ export const Actions = styled.div`
 
   & svg:hover {
     fill: #a286fc;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 18px;
+    gap: 10px;
+    top: 8px;
+    right: 10px;
   }
 `;
 
@@ -87,6 +90,16 @@ export const Text = styled.p`
     font-size: 20px;
     text-align: center;
   }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 17px;
+    letter-spacing: normal;
+
+    & svg {
+      font-size: 18px;
+      transform: translateY(2px);
+    }
+  }
 `;
 
 export const SecondaryInfo = styled.div`
@@ -97,6 +110,10 @@ export const SecondaryInfo = styled.div`
   @media only screen and (max-width: 768px) {
     justify-content: center;
   }
+
+  @media only screen and (max-width: 480px) {
+    gap: 20px;
+  }
 `;
 
 export const UserExperience = styled.div`
@@ -106,6 +123,10 @@ export const UserExperience = styled.div`
 
   @media only screen and (max-width: 1024px) {
     gap: 6px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    gap: 2px;
   }
 `;
 
@@ -129,5 +150,11 @@ export const Description = styled.div`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+  }
+
+  @media only screen and (max-width: 480px) {
+    & p {
+      font-size: 18px;
+    }
   }
 `;

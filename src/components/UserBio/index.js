@@ -26,6 +26,7 @@ const UserBio = ({ name, shortBio, experience, description }) => {
       easing: "ease",
       delay: 600,
       once: true,
+      disable: "mobile",
     });
   }, []);
 

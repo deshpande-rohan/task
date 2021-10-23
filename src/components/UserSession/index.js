@@ -13,7 +13,7 @@ import {
   Button,
 } from "./UserSessionElements";
 
-const UserSession = ({ createdAt, updatedAt }) => {
+const UserSession = () => {
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -23,6 +23,7 @@ const UserSession = ({ createdAt, updatedAt }) => {
       easing: "ease",
       delay: 800,
       once: true,
+      disable: "mobile",
     });
   }, []);
 

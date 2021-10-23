@@ -23,6 +23,10 @@ export const QuestionWrapper = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  @media only screen and (max-width: 480px) {
+    padding: 0 15px;
+  }
 `;
 
 export const QuestionContainer = styled.div`
@@ -93,5 +97,9 @@ export const Button = styled.button`
   @media only screen and (max-width: 1024px) {
     font-size: 18px;
     padding: 8px 22px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 16px;
   }
 `;

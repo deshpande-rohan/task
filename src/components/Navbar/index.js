@@ -1,5 +1,5 @@
 import React from "react";
-import { BiUserCircle } from "react-icons/bi";
+import { FaRegUserCircle } from "react-icons/fa";
 
 import {
   NavWrapper,
@@ -18,7 +18,7 @@ const Navbar = () => {
             hyper<span>learn</span>
           </BrandName>
           <UserIcon>
-            <BiUserCircle />
+            <FaRegUserCircle />
           </UserIcon>
         </NavContainer>
       </Nav>

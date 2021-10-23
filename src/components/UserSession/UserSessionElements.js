@@ -4,9 +4,9 @@ export const SessionWrapper = styled.div`
   display: flex;
   border: 2px solid #f2f2f2;
   border-radius: 8px;
-  padding: 15px 20px;
-  height: 70vh;
-  max-height: 70vh;
+  padding: 14px 20px;
+  height: 75%;
+  max-height: 80%;
 
   @media only screen and (max-width: 1024px) {
     padding: 12px 20px;
@@ -16,6 +16,11 @@ export const SessionWrapper = styled.div`
     padding: 8px 20px;
     margin-bottom: 20px;
   }
+
+  @media only screen and (max-width: 480px) {
+    width: 85%;
+    padding: 12px;
+  }
 `;
 
 export const SessionContainer = styled.div`
@@ -23,7 +28,6 @@ export const SessionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: center;
 
   @media only screen and (max-width: 1024px) {
     gap: 16px;
@@ -76,6 +80,12 @@ export const Button = styled.button`
   font-weight: 700;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: #9281fc;
+    background: #e3e3e3;
+  }
 
   @media only screen and (max-width: 1024px) {
     font-size: 18px;

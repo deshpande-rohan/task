@@ -51,6 +51,10 @@ export const BrandName = styled.div`
     right: 0;
     transform: translate(100%, 5%);
   }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 26px;
+  }
 `;
 
 export const UserIcon = styled.div`
@@ -58,4 +62,13 @@ export const UserIcon = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 40px;
+
+  & svg {
+    fill: #b3b3b3;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 28px;
+    transform: translate(10px, 2px);
+  }
 `;
